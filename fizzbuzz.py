@@ -1,47 +1,13 @@
-def calculadora():
-    op = input(''' 
-escreva a operação matemática 
-+ para adição 
-- para subtração 
-* para multiplicação 
-/ para divisão 
-''')
-
-    n1 = int(input("Primeiro operador: "))
-    n2 = int(input("Segundo operador: "))
-
-    if op == '+':
-        print('{} + {} = '.format(n1, n2))
-        print(n1 + n2)
-
-    elif op == '-':
-        print('{} - {} = '.format(n1, n2))
-        print(n1 - n2)
-
-    elif op == '*':
-        print('{} * {} = '.format(n1, n2))
-        print(n1 * n2)
-
-    elif op == '/':
-        print('{} / {} = '.format(n1, n2))
-        print(n1 / n2)
-
+def FizzBuzz():
+    numero = int(input("Digite um numero: "))
+    if numero % 5 == 0 and numero % 3 == 0:
+        print('fizz-buzz')
+    elif numero % 3 == 0:
+        print('fizz')
+    elif numero % 5 == 0:
+        print('buzz')
     else:
-        print('Você não digitou um operador válido. Tente novamente')
+        return numero
 
-    dnv()
-    
-def dnv():
-    calc_dnv = input(''' 
-    Deseja realizar outra operação? 
-    digite 'S' para sim e 'N' para não 
-    ''')
 
-    if calc_dnv.upper() == 'S':
-        calculadora()
-    elif calc_dnv.upper() == 'N':
-        print("Até mais! :)")
-    else:
-        dnv()
-
-calculadora()
+FizzBuzz()
