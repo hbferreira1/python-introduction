@@ -18,4 +18,4 @@ if posicao >= 0:
 else:
     print(" O ID %d não está registrado" % idvaca)    
 
-print(vetor)    
+print(vetor)   
